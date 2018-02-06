@@ -2,7 +2,7 @@
 
 ## csound
 
-`$csound blah.orc blah.sco -o foo.wav`
+`$: csound blah.orc blah.sco -o foo.wav`
 
 where:
 - `blah.orc` is the orchestra file (how they sound)
@@ -34,3 +34,49 @@ comments with `/* */` or `;`!!!! (yeah, seriously)
 **[Tom Dimuzio](http://www.thomasdimuzio.com/)** *Heaven to Stairway*
 
 **[John Oswald]** *Plexure* > Plunderphonics
+
+
+
+## Examples
+
+#### Oscillator
+The different parameters are:
+- `ifn`: instrument function
+- `linen`: line envelope - (input amplitude, attack, duration, decay)
+- `oscil`: oscillator - (amplitude, frequency, function)
+- `out`: what goes out and to which channel
+
+A score line looks like:
+```
+	i <#> <start> <duration> <frequency> <amplitude> <pan>
+```
+
+```
+instr 1   ; instrument #1 - oscillator
+  ifn = 1 ; waveform
+
+  kmaxamp = 0.6
+  aline linen kmaxamp, 0.3, p3, 0.7
+  a1 oscil p5*aline, p4, ifn
+  a2 oscil p5*aline, p4, ifn
+
+  out a1*(1.0 -p6), a2*p6
+endin
+```
+
+#### Sound file
+The different parameters are:
+- `soundin`: specifies source file - (filename, offset)
+- `out`: what goes out and to which channel
+
+```
+instr 1
+	a1 soundin "drums.aiff", p4
+	out a1*0.2
+endin
+```
+
+A score line looks like:
+```
+	i <#> <start> <duration> <offset>
+```
