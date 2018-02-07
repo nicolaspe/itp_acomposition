@@ -46,3 +46,9 @@ Beethoven's Moonlight Sonata was an important piece. First one recorded to start
 
 
 `pluck` implementation of a plucked string (karpluss strong plucked string algorithm)
+
+roughraga
+
+silver apples of the moon: first piece of music ever commissioned by a music label for electronic music - done on a buchla 100, which had a 16-step sequencer. This guy had three of these, and perform in a way that one went 16-step, 15-step and 13-step, so that the entire composition had to go 3120 steps before repeating.
+
+Brian Eno's variatons of Canon in D
