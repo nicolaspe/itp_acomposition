@@ -11,19 +11,6 @@ let interval 	= 0.10;
 console.log("f 1 0 16384 10 1 0.8 0.7 0.5 0.3");
 
 
-// == NOTES and SCALE
-let base = Math.random()*530 +120;	// base (120 , 650)
-let scale = [];
-scale[0] = 1;
-scale[1] = scale[0] *(Math.random()*1.2 +1.2);
-scale[2] = scale[1] *(Math.random()*1.2 +1.2);
-scale[3] = scale[2] *(Math.random()*1.2 +1.2);
-scale[4] = scale[3] *(Math.random()*1.2 +1.2);
-// comments with data
-console.log("; base: " +base);
-console.log("; scale: " +scale[0] +", " +scale[1] +", " +scale[2] +", " +scale[3] +", " +scale[4]);
-
-
 // == BASE (instrument #2) ==
 dur = 0.9;
 for(let i = 0; i < total_dur; i += interval){
@@ -53,6 +40,20 @@ for(let i = 0; i < total_dur; i += interval){
 
 
 // == OSCILLATOR ==
+let base = Math.random()*530 +120;	// base (120 , 650)
+
+// "scale" creation
+let scale = [];
+scale[0] = 1;
+scale[1] = scale[0] *(Math.random()*1.2 +1.2);
+scale[2] = scale[1] *(Math.random()*1.2 +1.2);
+scale[3] = scale[2] *(Math.random()*1.2 +1.2);
+scale[4] = scale[3] *(Math.random()*1.2 +1.2);
+
+// comments with data
+console.log("; base: " +base);
+console.log("; scale: " +scale[0] +", " +scale[1] +", " +scale[2] +", " +scale[3] +", " +scale[4]);
+
 // sound loop
 for(var i=0; i<500; i++){
 	// oscillator parameters
