@@ -14,4 +14,7 @@ csound foo.orc bar.sco -o blah.wav
 #	p3 = duration
 ```
 
-<audio src="03_seq002.wav" type="audio/wav"> </audio>
+<audio>
+	<!-- <source src="03_seq002.wav" type="audio/wav"> -->
+ 	<source src="03_seq002.mp3" type="audio/mpeg">
+</audio>
