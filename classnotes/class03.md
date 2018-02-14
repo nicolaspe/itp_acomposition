@@ -9,20 +9,21 @@
 
 	The only thing *humanity* concurs with, is that an octave is double the frequency
 
-	- tuning: ways of
-
-C -> C	: unison (tonic)
-	-> C# : minor second
-	-> D	:	major second
-	-> D# : minor third
-	-> E	: major third
-	-> F  : perfect fourth
-	-> F#	:	tritone
-	-> G	:	perfect fifth
-	-> G#	: minor sixth
-	-> A	: major sixth
-	-> A# : minor seventh
-	-> B  : major seventh
+	- tuning: ways of...
+```
+C -> C  : unison (tonic)
+  -> C# : minor second
+  -> D  : major second
+  -> D# : minor third
+  -> E  : major third
+  -> F  : perfect fourth
+  -> F# : tritone
+  -> G  : perfect fifth
+  -> G# : minor sixth
+  -> A  : major sixth
+  -> A# : minor seventh
+  -> B  : major seventh
+```
 
 in western music we usually use a SUBSET of the chromatic scale to construct something called a diatonic scale (called the key)
 
