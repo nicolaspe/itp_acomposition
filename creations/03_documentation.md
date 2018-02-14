@@ -16,5 +16,5 @@ csound foo.orc bar.sco -o blah.wav
 
 <audio>
 	<!-- <source src="03_seq002.wav" type="audio/wav"> -->
- 	<source src="03_seq002.mp3" type="audio/mpeg">
+ 	<source src="03_seq002.mp3" type="audio/mp3">
 </audio>
