@@ -71,7 +71,7 @@ for i in np.arange(0.0, total_dur, interval):
 	dur  = 0.9
 	#	chance of syncopation : 10%
 	if rng.random() < 0.1:
-		start += interval
+		start += interval*0.5
 	# write line
 	note_list = ["i", instr, start, dur, offset, "\n"]
 	note = " ".join(str(item) for item in note_list)
