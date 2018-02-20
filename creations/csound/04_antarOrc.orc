@@ -21,8 +21,6 @@ instr 2   ; instrument #2 - oscillator
     k2 linen 0.9, 0.05, p3, 0.65
     a2 oscil p5*k2, p4, ifn
     out a2*(1.0 -p6), a2*p6
-    ; out a2, a2
-
 endin
 
 instr 3   ; instrument #3 - plucking

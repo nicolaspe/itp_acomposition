@@ -29,7 +29,7 @@ def markov(arr):
 #	p3 = duration
 
 total_dur = 15.0
-interval  = 0.20	# 300 bpm sampling
+interval  = 0.30	# 300 bpm sampling
 
 score_file = []
 score_file.append("; MARKOVIAN COMPOSITION by nicolas escarpentier")
@@ -54,16 +54,11 @@ score_file.append(harmonic_log + "\n")
 
 
 
-# == MARKOV CHAIN 
+# == MARKOV CHAIN - hard coded
 orig_notes = [76, 76, 76, 72, 76, 79, 67, 72, 67, 64, 69, 71, 71, 69, 67, 76, 79, 81, 77, 79, 76, 72, 74, 71]
 orig_speed = [0.5, 0.5, 0.5, 0.5, 0.5, 1., 1., 1., 0.5, 1., 0.5, 0.5, 0.5, 1., 1., 1., 1., 1., 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
 
-n_chain = markov(orig_notes)
-s_chain = markov(orig_speed)
-
-# starting point of the chain
-note = rng.choice(orig_notes)
-sped = rng.choice(orig_speed)
+note = 0
 
 # == CREATE SCORE
 # select instrument: pluck
@@ -73,9 +68,9 @@ i = 0.0
 while i < total_dur:
     # parameters of time
 	start= i
-	dur  = sped *interval
+	dur  = orig_speed[note] *interval
 	# parameters of sound
-	freq = mtof( note )
+	freq = mtof( orig_notes[note] )
 	amp  = rng.random()*2000 + 4000
 	pan  = 0.5
 	# write line
@@ -84,8 +79,7 @@ while i < total_dur:
 	score_file.append(note_str)
 	# skip ahead
 	i += dur
-	note = rng.choice( n_chain[note] )
-	sped = rng.choice( s_chain[sped] )
+	note = (note+1)%len(orig_notes)
 
 
 
@@ -95,7 +89,7 @@ score_file.append("e")
 
 
 # == WRITE FILE ==
-filename = "04_markov02b.sco"
+filename = "04_markov00.sco"
 # clear the file
 open(filename,"w").close()
 # write the lines
