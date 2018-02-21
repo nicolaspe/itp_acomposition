@@ -54,7 +54,7 @@ score_file.append(harmonic_log + "\n")
 
 
 
-# == MARKOV CHAIN 
+# == MARKOV CHAIN
 orig_notes = [76, 76, 76, 72, 76, 79, 67, 72, 67, 64, 69, 71, 71, 69, 67, 76, 79, 81, 77, 79, 76, 72, 74, 71]
 orig_speed = [0.5, 0.5, 0.5, 0.5, 0.5, 1., 1., 1., 0.5, 1., 0.5, 0.5, 0.5, 1., 1., 1., 1., 1., 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
 
@@ -95,7 +95,7 @@ score_file.append("e")
 
 
 # == WRITE FILE ==
-filename = "04_markov02b.sco"
+filename = "04_markov02c.sco"
 # clear the file
 open(filename,"w").close()
 # write the lines
