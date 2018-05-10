@@ -1,4 +1,4 @@
-# Algorithmic Composition - Feb 28
+# Algorithmic Composition - Mar 07
 
 ## [Supercollider](https://supercollider.github.io/)
 Creative music coding language. Used to be paid and later open sourced.
@@ -26,4 +26,4 @@ We also have `ar` for **audio rate** and `kr` for **control rate**
 
 
 ## Extra stuff
-- [20 objects](http://www.darwingrosse.com/20Objects/) good MaxMSP tutorial
+- [20 objects](http://www.darwingrosse.com/20Objects/) good MaxMSP tutoriallear
